@@ -10,6 +10,8 @@ echo "unexpected_cfgs = { level = 'warn', check-cfg = ['cfg(memory_consistency_a
 
 export CARGO_PROFILE_RELEASE_STRIP=symbols
 export CARGO_PROFILE_RELEASE_LTO=fat
+export OPENSSL_DIR=${PREFIX}
+export OPENSSL_NO_VENDOR=1
 
 cargo-bundle-licenses \
     --format yaml \
