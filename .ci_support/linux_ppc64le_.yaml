@@ -18,5 +18,7 @@ openssl:
 - '3'
 rust_compiler:
 - rust
+rust_compiler_version:
+- '1.82'
 target_platform:
 - linux-ppc64le
