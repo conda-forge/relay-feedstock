@@ -4,10 +4,6 @@ set -o xtrace -o nounset -o pipefail -o errexit
 
 cd compiler
 
-# Disable unexpected_cfg warning
-echo "[lints.rust]" >> crates/intern/Cargo.toml
-echo "unexpected_cfgs = { level = 'warn', check-cfg = ['cfg(memory_consistency_assertions)'] }" >> crates/intern/Cargo.toml
-
 export CARGO_PROFILE_RELEASE_STRIP=symbols
 export CARGO_PROFILE_RELEASE_LTO=fat
 export OPENSSL_DIR=${PREFIX}
