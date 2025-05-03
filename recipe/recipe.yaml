@@ -1,5 +1,5 @@
 context:
-  version: 18.2.0
+  version: "19.0.0"
 
 package:
   name: relay
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/facebook/relay/archive/v${{ version }}.tar.gz
-  sha256: a03f8fdeae217c7fdb12c3f6768a1e023dc930f7c8df53d0f5cbe4dfe2ecdbf5
+  sha256: 8a693abdb05e57e3fa4e61012a6992de865fbeab35e15fd05514e2390b315a8c
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
